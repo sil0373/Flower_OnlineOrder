@@ -1,0 +1,320 @@
+ .Order{
+  display:flex;
+  width: 100%;
+  max-width: 1700px;
+  min-width:400px;
+  justify-content:center;
+  margin: 0 auto;
+  box-sizing: border-box;
+ }
+
+ .top{
+  background-image: url('Bouquet.jpeg');
+  background-size: cover;  
+  background-position: center;
+  background-repeat:no-repeat;
+  width: 100%;
+  max-width: 1700px;
+ }
+
+ .container {
+    display: flex;
+    margin: 0;
+    padding: 2rem;
+    width: 100%;
+    height:100%;
+    max-height: 3000px;
+    max-width: 1700px;
+    min-width: 0; 
+    justify-content:flex-start;
+    background-color:rgb(236, 239, 236);
+  }
+
+  .foodGrid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    min-height: 1000px;
+    width:100%;
+    max-width: 1300px;
+    /* min-width: 400px; */
+    gap:2rem;
+    margin: 0 auto;
+    
+  }
+
+  .foodWrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .foodItem{
+    /* top: 100px; */
+    padding:20px;
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width:100%;
+    height:100%;
+    max-width: 180px;
+    max-height:200px;
+    border: 3px solid rgb(194, 216, 201);
+    border-radius: 10px;
+    background-color:rgb(194, 216, 201);
+    text-align: left;
+    color: rgb(45, 59, 46);
+    
+    
+    
+  }
+
+  .foodItem button{
+    writing-mode: horizontal-tb;
+  }
+  
+  .foodItem span{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri;
+    font-size:18px;
+  }
+
+  .parentPreview{
+    display:grid;
+    width: 100%;
+    max-width: 500px;
+    /* height:100%;
+    max-height:500px; */
+    aspect-ratio: 1 / 1;
+  }
+
+  .PreviewSession{ 
+    position: relative;
+    width: 100%;
+    /* height:100%; */
+  max-width: 500px;
+  /* max-height:500px; */
+    justify-content: flex-end; 
+    box-sizing: border-box;
+  }
+
+  .circle{
+    position: absolute;
+    border-radius: 50%;
+    margin: 10px;
+    padding:5px;
+    width:100%;
+    /* height:100%; */
+    max-width:500px;
+    /* max-height:500px; */
+    aspect-ratio: 1 / 1;
+    background-color:rgb(207, 225, 231);
+    /* box-shadow: 0 0 10px rgba(0, 96, 45, 0.2); */
+    z-index: 10;
+  
+  }
+
+  .circle span{
+    display:flex;
+    justify-content:center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri
+  }
+
+  #wrapping{
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    transform: rotate(20deg);
+    z-index: 10;
+    max-width: 400px;
+    max-height: 500px;
+    width:100%;
+    height:100%;
+  }
+
+  #wrappingFront{
+    position: absolute;
+    top: 180px;
+    left: 90px;
+    transform: rotate(20deg);
+    z-index:30 ;
+    max-width: 280px;
+    max-height:340px;
+    width:100%;
+    height:100%;
+  }
+
+  /* .foodItem img{
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+  } */
+
+  #title{
+    display:flex;
+  width: 100%;
+  max-width: 1300px;
+    /* min-width: 400px; */
+  justify-content:center;
+    margin: 0px;
+    padding: 50px;
+    font-size:50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: rgb(26, 41, 14);
+    
+  }
+
+  #subtitle{
+    display:flex;
+    padding:20px;
+  width: 100%;
+  max-width: 1300px;
+    /* min-width: 400px; */
+    height:100%;
+  max-height: 50px;
+  font-size:15px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri;
+  color: rgb(0, 0, 0);
+
+  justify-content:center;
+  }
+
+  .NamePrice{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+  #Price{
+    display:flex;
+    justify-content: end;
+    color: rgb(45, 59, 46);
+  }
+
+  .buttonGroup{
+    display:grid;
+    padding:0px;
+    grid-template-columns: 50% 50%;
+    max-width: 400px;
+    width:100%;
+    gap:0.2rem;
+    margin-top: auto;
+
+  }
+
+  #button1{
+    /* position: absolute;
+    top: 200px;
+    left: 15px; */
+    background-color:rgb(237, 207, 168);
+    border: 3px solid rgb(225, 218, 201);
+    border-radius: 5px;
+    width: 100%;
+    height: 25px; 
+    max-width: none;
+  }
+
+  #button2{
+    /* position: absolute;
+    top:200px;
+    left:115px; */
+    background-color:rgb(237, 207, 168);
+    border: 3px solid rgb(225, 218, 201); 
+    border-radius: 5px;
+    width: 100%;
+    height: 25px; 
+    max-width: none;
+  }
+
+ #Clarification{
+   position: absolute;
+   top:-30px;
+   left:190px;
+   height: 120px;
+   width: 160px;
+   background-color: rgb(49, 82, 56);
+   padding: 5px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+   z-index: 50;
+   border-radius: 10px;
+   text-align: left;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri;
+   line-height: 1.5;
+   color:aliceblue;
+ }
+
+ #More{
+   position: absolute;
+   top:-60px;
+   left:0px;
+   font-size: 13px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+ }
+
+ .Result{
+    display:flex;
+    margin: 30px;
+
+ }
+
+#shoppingButton{
+  background-color:rgb(237, 207, 168);
+    border: 3px solid rgb(225, 218, 201); 
+    border-radius: 5px;
+    width: 400px;
+    height: 25px;
+}
+
+.Generation{
+  position: relative;
+  top:-420px;
+  left:860px
+}
+
+.Generation button{
+  background-color:rgb(237, 207, 168);
+    border: 3px solid rgb(225, 218, 201); 
+    border-radius: 5px;
+    width: 400px;
+    height: 25px;
+}
+
+ .chicken-img{
+  width:130px;
+  height:250px;
+  z-index: 20;
+ }
+
+ .chicken-0 {
+  position: absolute;
+  top: 100px;
+  left: 110px;
+}
+
+.chicken-1 {
+  position: absolute;
+  top: 100px;
+  left: 170px;
+  transform: rotate(5deg);
+}
+
+.chicken-2 {
+  position: absolute;
+  top: 120px;
+  left: 220px;
+  transform: rotate(20deg);
+}
+
+.chicken-3 {
+  position: absolute;
+  top: 140px;
+  left: 280px;
+  transform: rotate(30deg);
+}
+
+#imageShow{
+  width:100%;
+  height:100%;
+  max-width:180px;
+  max-height:130px;
+}
