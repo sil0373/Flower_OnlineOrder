@@ -454,7 +454,6 @@ export default function HomePage() {
           <p>{cartReveal}</p>
           <p>Total price: ${addCalories}</p>
          
-          {/* <p>The nutrition type of your food combination are: {Object.entries(foodState).filter(([foodName, num]) => num > 0).map(([foodName, num]) => FoodTypeChart[foodName]).join(', ')}</p> */}
         </div>
        {/* <div>{setFoodQueue(foodQueue => [...foodQueue, foodFinder.foodName]).map(((_,i)=><img key={`${foodName}-${i}`} src={FlowerImages[foodName]} alt="chicken" className={`chicken-img chicken-${i}`}/>))}</div> */}
 
